@@ -3,7 +3,10 @@ import Home from "./Home";
 
 const App = () => {
   return (
-    <h1>Welcome to Accountabilibuddies - The 1# Survey and Forum Website!</h1>
+    <div>
+      <h1>Welcome to Accountabilibuddies - The 1# Survey and Forum Website!</h1>
+      <Home />
+    </div>
   );
 };
 
