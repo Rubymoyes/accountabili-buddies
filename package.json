@@ -1,11 +1,11 @@
 {
-  "name": "boilerplate-react-webpack",
+  "name": "accountabili-buddies",
   "version": "0.2.1",
-  "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "description": "Survey and forum page",
+  "repository": "https://github.com/Rubymoyes/accountabili-buddies",
   "main": "server/index.js",
-  "author": "EDA",
-  "license": "ISC",
+  "author": "Ruby, Joan, Bobbi, Brandon",
+  "license": "MIT",
   "scripts": {
     "start": "webpack && node server",
     "dev": "node server & webpack --watch",
@@ -26,7 +26,10 @@
     ]
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.2",
+    "knex": "^0.15.2",
+    "sqlite3": "^4.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

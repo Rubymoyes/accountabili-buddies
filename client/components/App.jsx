@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
+import Home from "./Home";
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
-  )
-}
+    <div>
+      <h1>Welcome to Accountabilibuddies - The 1# Survey and Forum Website!</h1>
+      <Home />
+    </div>
+  );
+};
 
-export default App
-
+export default App;

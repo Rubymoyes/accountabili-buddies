@@ -1,16 +1,17 @@
-# A starter webpack project for React
+Survey and Forum Site: ACCOUNTABILIBUDDIES
+View and answer questions with your username, log in and answer questions!
 
-This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
 
-* Fork this repo
-* Rename your repo according to the app you're building
+Basic Layout:
 
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && yarn
-```
+1 - Main Page - Forms to log in and sign in
 
-To start the development server with a watcher that rebuilds your code, run `yarn dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
+2 - Question List Page - lists all questions answered, and all questions available to be answered
 
-Additional components should be placed in `client/components`.
+3 - Question Profile Page - Lists single question with a form to allow user to submit an answer, along with other answers other users have submitted.
 
+Remember to checkout a branch from the v1 branch! V1 so far has all of our React, Knex, db and server folders.
+
+
+
+2018 - Bobbi, Brandon, Joan, Ruby.
