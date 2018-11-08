@@ -6,12 +6,12 @@ const Profile = () => {
     // below this have just put in a basic form for log in and sign up, have not tailored it to react
     //not sure what the action tag needs to be filled with so have left it with the generic one from w3 schools
     <div>
-      <head>
+      {/* <head>
         <title>Accountabili-Buddies</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="./profile.css" rel="stylesheet" />
-      </head>
+      </head> */}
 
       <body>
         <div class="header">
