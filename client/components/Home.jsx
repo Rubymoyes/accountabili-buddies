@@ -5,7 +5,7 @@ import React from "react";
 import { HashRouter as Router, Route} from "react-router-dom"; //obviously shouldnt be link, not sure what else to put in there
 
 
-const forms = () => {
+const Home = () => {
   
   
   return (
