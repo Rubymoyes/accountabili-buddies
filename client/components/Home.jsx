@@ -7,8 +7,8 @@ import { HashRouter as Router, Route} from "react-router-dom"; //obviously shoul
 
 const Home = () => {
   
-  
-  return (
+}  
+  // return (
 //     // below this have just put in a basic form for log in and sign up, have not tailored it to react
 //     //not sure what the action tag needs to be filled with so have left it with the generic one from w3 schools
 //     <div>

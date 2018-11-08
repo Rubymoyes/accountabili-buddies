@@ -12,13 +12,15 @@ let questionsList = {
         },
         {
             id: 3,
-            question: "Yes or no?",
+            question: "What is the meaning of human existence?",
             answer: " ",
         },
         {
             id: 4,
-            question: "What are we, Jared?",
+            question: "How are you enjoying React?",
             answer: " ",
         }
     ]
 }
+
+export default questionsList
