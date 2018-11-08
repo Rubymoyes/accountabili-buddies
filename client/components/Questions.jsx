@@ -20,7 +20,9 @@ let Questions = () => {
                     (oneQuestion) => {
                         console.log(oneQuestion)
                         return (
-                            <li> {oneQuestion.question}</li>
+                            <li key={oneQuestion.question}> 
+                            <Link to={"/" + oneQuestion.question}> {oneQuestion.question} </Link>
+                            </li>
                         );
                     }
                 )}
