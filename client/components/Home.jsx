@@ -1,5 +1,5 @@
 //used the template from taz and i's taxonomic nav page
-
+import { Link } from "react-router-dom";
 import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom"; //obviously shouldnt be link, not sure what else to put in there
 
@@ -47,6 +47,11 @@ const Home = () => {
             <input type="submit" value="Submit" />
           </fieldset>
         </form>
+        <ul>
+          <li>
+            <Link to={"/survey"}>Questions Page</Link>
+          </li>
+        </ul>
         <div className="footer bottomPart">
           <p>Bobbi, Ruby, Joan and Brandon 2018 </p>
         </div>

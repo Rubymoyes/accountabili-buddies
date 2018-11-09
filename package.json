@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.2",
     "knex": "^0.15.2",
     "react-router-dom": "^4.3.1",
