@@ -8,8 +8,6 @@ import { HashRouter as Router, Route } from "react-router-dom";
 const mapTarget = questions.questions;
 
 let Questions = () => {
-  console.log(mapTarget);
-
   return (
     <div>
       <h2>Question:</h2>
