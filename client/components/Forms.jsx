@@ -101,7 +101,53 @@ class Forms extends React.Component {
 
 render () {
     return (
-    <Home />
+    // <Home />
+    <div>
+    <div className="landingpagebg" id="bigThing">
+      <div className="header topPart" />
+
+      <h2>Log in</h2>
+
+      <form method="get">
+        <fieldset>
+          <legend>Log in:</legend>
+          <p>Email address:</p>
+          <input type="text" name="Email"s />
+          <br />
+          <p>Password:</p>
+          <input type="password" name="Password"  />
+          <br />
+          <br />
+          <input type="submit" />
+        </fieldset>
+      </form>
+
+      <h2>Sign up</h2>
+
+      {/* // not sure what the action section relates to */}
+      <form method="post">
+        <fieldset>
+          <legend>Sign Up:</legend>
+          <p>Email address:</p>
+          <input type="text" name="Email" />
+          <br />
+          <p>Password:</p>
+          <input type="password" name="Password" />
+          <br />
+          <br />
+          <p>Repeat Password:</p>
+          <input type="password" name="Password" />
+          <br />
+          <br />
+          <input type="submit" />
+        </fieldset>
+      </form>
+      <div className="footer bottomPart">
+        <p>Bobbi, Ruby, Joan and Brandon 2018 </p>
+      </div>
+    </div>
+  </div>
+
     )
 }
 
