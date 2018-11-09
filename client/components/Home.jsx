@@ -1,7 +1,6 @@
-//used the template from taz and i's taxonomic nav page
-import { Link } from "react-router-dom";
 import React from "react";
-import { HashRouter as Router, Route } from "react-router-dom"; //obviously shouldnt be link, not sure what else to put in there
+import { HashRouter as Router, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -13,38 +12,38 @@ const Home = () => {
 
         <h2>Log in</h2>
 
-        <form action="/action_page.php" method="get">
+        <form method="get">
           <fieldset>
             <legend>Log in:</legend>
             <p>Email address:</p>
-            <input type="text" name="Email" value="" />
+            <input type="text" name="Email"s />
             <br />
             <p>Password:</p>
-            <input type="password" name="Password" value="" />
+            <input type="password" name="Password"  />
             <br />
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" />
           </fieldset>
         </form>
 
         <h2>Sign up</h2>
 
         {/* // not sure what the action section relates to */}
-        <form action="/action_page.php" method="post">
+        <form method="post">
           <fieldset>
             <legend>Sign Up:</legend>
             <p>Email address:</p>
-            <input type="text" name="Email" value="" />
+            <input type="text" name="Email" />
             <br />
             <p>Password:</p>
-            <input type="password" name="Password" value="" />
+            <input type="password" name="Password" />
             <br />
             <br />
             <p>Repeat Password:</p>
-            <input type="password" name="Password" value="" />
+            <input type="password" name="Password" />
             <br />
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" />
           </fieldset>
         </form>
         <ul>
