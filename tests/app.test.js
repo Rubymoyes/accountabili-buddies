@@ -15,7 +15,7 @@ test("<App />", () => {
 });
 
 test("<App /> routes", () => {
-  const expected = 2;
+  const expected = 3;
 
   const wrapper = shallow(<App />);
 
