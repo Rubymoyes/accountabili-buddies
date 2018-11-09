@@ -14,9 +14,9 @@ const App = () => {
           Welcome to Accountabilibuddies - The 1# Survey and Forum Website!
         </h1>
 
-        <Route path="/" component={Home} />
-        <Route path="/survey" component={Questions} />
-        <Route path="/form" component={inputForm} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/survey" component={Questions} />
+        <Route exact path="/form" component={inputForm} />
         
       </React.Fragment>
     </Router>
