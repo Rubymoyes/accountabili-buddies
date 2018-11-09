@@ -7,8 +7,8 @@
   "author": "Ruby, Joan, Bobbi, Brandon",
   "license": "MIT",
   "scripts": {
-    "start": "webpack && node server",
-    "dev": "node server & webpack --watch",
+    "start": "node server",
+    "dev": "node server --watch",
     "test": "jest"
   },
   "babel": {
@@ -43,8 +43,6 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.1.4",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1"
+    "react-dom": "^16.2.0"
   }
 }
