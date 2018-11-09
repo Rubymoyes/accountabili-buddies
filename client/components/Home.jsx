@@ -13,11 +13,11 @@ const Home = () => {
 
         <h2>Log in</h2>
 
-        <form action="/action_page.php" method="get">
+        <form method="get">
           <fieldset>
             <legend>Log in:</legend>
             <p>Email address:</p>
-            <input type="text" name="Email" value="" />
+            <input type="text" name="Email" />
             <br />
             <p>Password:</p>
             <input type="password" name="Password" value="" />
