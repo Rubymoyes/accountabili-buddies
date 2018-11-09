@@ -12,38 +12,38 @@ const Home = () => {
 
         <h2>Log in</h2>
 
-        <form action="/action_page.php" method="get">
+        <form method="get">
           <fieldset>
             <legend>Log in:</legend>
             <p>Email address:</p>
-            <input type="text" name="Email" value="" />
+            <input type="text" name="Email"s />
             <br />
             <p>Password:</p>
-            <input type="password" name="Password" value="" />
+            <input type="password" name="Password"  />
             <br />
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" />
           </fieldset>
         </form>
 
         <h2>Sign up</h2>
 
         {/* // not sure what the action section relates to */}
-        <form action="/action_page.php" method="post">
+        <form method="post">
           <fieldset>
             <legend>Sign Up:</legend>
             <p>Email address:</p>
-            <input type="text" name="Email" value="" />
+            <input type="text" name="Email" />
             <br />
             <p>Password:</p>
-            <input type="password" name="Password" value="" />
+            <input type="password" name="Password" />
             <br />
             <br />
             <p>Repeat Password:</p>
-            <input type="password" name="Password" value="" />
+            <input type="password" name="Password" />
             <br />
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" />
           </fieldset>
         </form>
         <div className="footer bottomPart">

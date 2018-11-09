@@ -4,6 +4,7 @@ import { HashRouter as Router, Route } from "react-router-dom";
 import {Link} from "react-router-dom";
 import Questions from "./Questions";
 import Profile from "./Profile";
+import inputForm from "./Forms";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
 
         <Route path="/" component={Home} />
         <Route path="/survey" component={Questions} />
+        <Route path="/form" component={inputForm} />
       </React.Fragment>
     </Router>
   );

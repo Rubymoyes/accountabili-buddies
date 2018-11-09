@@ -3,12 +3,12 @@ import React from 'react'
 import Home from './Home'
 import { setFlagsFromString } from 'v8';
 
-const makeForm = {
-    email: '',
-    password: '',
-}
+// const makeForm = {
+//     email: '',
+//     password: '',
+// }
 
-class inputForm extends React.Component {
+class Forms extends React.Component {
     constructor (props) {
         super (props)
 
@@ -25,7 +25,7 @@ class inputForm extends React.Component {
             },
 
             validators: {
-                isRequired: email.includes('@')
+                isRequired: email => val && val.length
 
                 // How do we put the email thingy here?
                 // We need to check if the email has a @ in it
@@ -76,21 +76,21 @@ class inputForm extends React.Component {
 
         // Copied and pasted from here 
 
-        // validate () {
-        //     const invalid = {...this.state.invalid}
-        //     for (const field in this.state.item) {
-        //       const validators = this.state.validation[field] || []
-        //       validators.forEach(v => {
-        //         if (!this.state.validators[v](this.state.item[field])) {
-        //           invalid[field] = this.state.errors[v]
-        //         } else {
-        //           delete invalid[field]
-        //         }
-        //       })
-        //     }
-        //     this.setState({invalid})
-        //     return !Object.keys(invalid).length
-        //   }
+        validate () {
+            const invalid = {...this.state.invalid}
+            for (const field in this.state.item) {
+              const validators = this.state.validation[field] || []
+              validators.forEach(v => {
+                if (!this.state.validators[v](this.state.item[field])) {
+                  invalid[field] = this.state.errors[v]
+                } else {
+                  delete invalid[field]
+                }
+              })
+            }
+            this.setState({invalid})
+            return !Object.keys(invalid).length
+          }
 
 
 
@@ -99,12 +99,12 @@ class inputForm extends React.Component {
 
 // Render and return
 
-// render () {
-//     return (
-//     <Home />
-//     )
-// }
+render () {
+    return (
+    <Home />
+    )
+}
 
 
 
-export default inputForm
+export default Forms
