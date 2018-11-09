@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node server",
     "dev": "node server --watch",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "webpack"
   },
   "babel": {
     "presets": [
