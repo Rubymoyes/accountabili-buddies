@@ -16,7 +16,7 @@ const Home = () => {
           <fieldset>
             <legend>Log in:</legend>
             <p>Email address:</p>
-            <input type="text" name="Email"s />
+            <input type="text" name="Email" />
             <br />
             <p>Password:</p>
             <input type="password" name="Password"  />
