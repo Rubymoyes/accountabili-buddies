@@ -17,6 +17,7 @@ const App = () => {
         <Route path="/" component={Home} />
         <Route path="/survey" component={Questions} />
         <Route path="/form" component={inputForm} />
+        
       </React.Fragment>
     </Router>
   );

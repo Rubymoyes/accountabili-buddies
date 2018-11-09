@@ -46,6 +46,11 @@ const Home = () => {
             <input type="submit" />
           </fieldset>
         </form>
+        <ul>
+          <li>
+            <Link to={"/survey"}>Questions Page</Link>
+          </li>
+        </ul>
         <div className="footer bottomPart">
           <p>Bobbi, Ruby, Joan and Brandon 2018 </p>
         </div>

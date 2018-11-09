@@ -1,45 +1,49 @@
 import React from "react";
 
-import { Link } from 'react-router-dom';
-import questions from '../../data/data'
+import { Link } from "react-router-dom";
+import questions from "../../data/data";
 
-import { HashRouter as Router, Route } from "react-router-dom"; 
+import { HashRouter as Router, Route } from "react-router-dom";
 
-const mapTarget = questions.questions
+const mapTarget = questions.questions;
 
 let Questions = () => {
-    console.log(mapTarget)
+  return (
+    <div>
+      <h2>Question:</h2>
 
-
-    return (
-        <div>
-            <h2>Question:</h2>
-
-            <ul>
-                {mapTarget.map(
-                    (oneQuestion) => {
-                        console.log(oneQuestion)
-                        return (
-                            <li key={oneQuestion.question}> 
-                            <Link to={"/" + oneQuestion.question}> {oneQuestion.question} </Link>
-                            </li>
-                        );
-                    }
-                )}
-            </ul>
-
-        </div>
-
-    );
-
-
-
-
-}
-
-
-
-
+      <ul>
+        {mapTarget.map(oneQuestion => {
+          console.log(oneQuestion);
+          return <li> {oneQuestion.question}</li>;
+        })}
+      </ul>
+      <form action="" method="post">
+        <fieldset>
+          <legend>Share Your Thoughts:</legend>
+          <p>Answer Question 1 here:</p>
+          <input type="text" name="answer 1" value="" />
+          <br />
+          <p>Answer Question 2 here:</p>
+          <input type="text" name="answer 2" value="" />
+          <br />
+          <p>Answer Question 3 here:</p>
+          <input type="text" name="answer 3" value="" />
+          <br />
+          <p>Answer Question 4 here:</p>
+          <input type="text" name="answer 4" value="" />
+          <br />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+      <ul>
+        <li>
+          <Link to={"/"}>Home Page</Link>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
 const Profile = () => {
   return (
@@ -67,5 +71,4 @@ const Profile = () => {
   );
 };
 
-export default Questions
-
+export default Questions;
