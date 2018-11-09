@@ -31,3 +31,21 @@ test("<Questions /> form", () => {
   const actual = wrapper.find("form").length;
   expect(actual).toBe(expected);
 });
+
+test("<Questions /> ", () => {
+  const expected = "Question:";
+
+  const wrapper = shallow(<Questions />);
+
+  const actual = wrapper.find("h2");
+  expect(actual.text()).toBe(expected);
+});
+
+test("<Questions /> div", () => {
+  const expected = 1;
+
+  const wrapper = shallow(<Questions />);
+
+  const actual = wrapper.find("div").length;
+  expect(actual).toBe(expected);
+});
